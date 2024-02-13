@@ -42,7 +42,7 @@ function KidsClick(){
 // }
 
 if(categoryName!="https://shopper-backend-fdhf.onrender.com/products"){
-    CategoryClick(`https://shopper-backend-fdhf.onrender.com/${categoryName}`);
+    CategoryClick(`https://shopper-backend-fdhf.onrender.com/products/${categoryName}`);
 }
 function bodyload(){
     categoryName = JSON.parse(localStorage.getItem("category"));
