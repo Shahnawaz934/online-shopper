@@ -88,8 +88,8 @@ ul{
 #card-box div:first-child{
     margin-top: 200px;
     /* background-image: url(/images/womens-shoes4.jpg); */
-    background-position: center;
-    background-size: cover;
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 #card-box div:nth-child(2){
     margin-top: 100px;
