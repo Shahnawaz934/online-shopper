@@ -1,6 +1,6 @@
-
-document.getElementById("continueBtn").addEventListener("click",ContinueClick);
 document.querySelector("form").addEventListener("submit",FormSubmit);
+document.getElementById("continueBtn").addEventListener("click",ContinueClick);
+
 
 
 function FormSubmit(){
