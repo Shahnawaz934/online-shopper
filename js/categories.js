@@ -229,7 +229,8 @@ function handleCategoryChange(){
     else{
         localStorage.setItem("category",JSON.stringify(categoryName));
         var category = JSON.parse(localStorage.getItem("category"));
-        CategoryClick(`https://shopper-backend-fdhf.onrender.com/${category}`)
+        console.log(category);
+        CategoryClick(`https://shopper-backend-fdhf.onrender.com/products/${category}`)
     }
 }
 
@@ -260,7 +261,7 @@ function handlePriceChange(){
         })
     }
     else{
-        fetch(`https://shopper-backend-fdhf.onrender.com/${categoryName}`)
+        fetch(`https://shopper-backend-fdhf.onrender.com/products/${categoryName}`)
         .then(response=>{
             return response.json();
         })
