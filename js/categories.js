@@ -219,7 +219,7 @@ function LoadCategories(){
 
 function handleCategoryChange(){
     document.querySelector("main").innerHTML = ""
-    var categoryName = document.querySelector("select").value;
+    var categoryName = document.getElementById("lstCategories").value;
     //console.log(categoryName);
     if(categoryName=="all"){
         
@@ -260,7 +260,7 @@ function handlePriceChange(){
         })
     }
     else{
-        fetch(`https://shopper-backend-fdhf.onrender.com${categoryName}`)
+        fetch(`https://shopper-backend-fdhf.onrender.com/${categoryName}`)
         .then(response=>{
             return response.json();
         })
